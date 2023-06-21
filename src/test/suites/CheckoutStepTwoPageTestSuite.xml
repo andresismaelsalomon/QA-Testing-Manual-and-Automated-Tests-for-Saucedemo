@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CheckoutStepOnePageTestSuite" parallel="tests">
+
+    <!-->TC-019-->
+    <test name="finishCheckoutTest">
+        <classes>
+            <class name="CheckoutStepTwoPageTest">
+                <methods>
+                    <include name="finishCheckoutTest"/></methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-->TC-020-->
+    <test name="cancelCheckoutTest">
+        <classes>
+            <class name="CheckoutStepTwoPageTest">
+                <methods>
+                    <include name="cancelCheckoutTest"/></methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>

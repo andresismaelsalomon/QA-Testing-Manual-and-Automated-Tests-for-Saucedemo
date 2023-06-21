@@ -1,0 +1,51 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CartPageTestSuite" parallel="tests">
+
+    <!-->TC-010-->
+    <test name="removeAllFromCartTest">
+        <classes>
+            <class name="CartPageTest">
+                <methods>
+                    <include name="removeAllFromCartTest"/></methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <!-->TC-011-->
+    <test name="goBackToInventoryTest">
+        <classes>
+            <class name="CartPageTest">
+                <methods>
+                    <include name="goBackToInventoryTest"/></methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-->TC-012-->
+    <test name="goToCheckoutTest">
+        <classes>
+            <class name="CartPageTest">
+                <methods>
+                    <include name="goToCheckoutTest"/></methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-->TC-013
+    <test name="goToCheckoutWithEmptyCartTest">
+        <classes>
+            <class name="CartPageTest">
+                <methods><include name="goToCheckoutWithEmptyCartTest"></include></methods>
+            </class>
+        </classes>
+    </test>
+
+    Can't be done because there's no error to be displayed if the user proceeds with an empty cart.
+    It's a missing feature which I marked as a bug because given the case the error must display.
+    -->
+
+
+
+
+</suite>

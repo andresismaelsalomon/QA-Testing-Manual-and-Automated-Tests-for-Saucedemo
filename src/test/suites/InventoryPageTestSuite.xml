@@ -1,0 +1,74 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="InventoryPageTestSuite" parallel="tests">
+
+    <!-->TC-003-->
+    <test name="addToCartTest">
+        <classes>
+            <class name="InventoryPageTest">
+                <methods>
+                    <include name="addToCartTest"/></methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-->TC-004-->
+    <test name="removeAllFromCartTest">
+        <classes>
+            <class name="InventoryPageTest">
+                <methods>
+                    <include name="removeAllFromCartTest"/></methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-->TC-005-->
+    <test name="sortItemsFromAtoZ">
+        <classes>
+            <class name="InventoryPageTest">
+                <methods>
+                    <include name="sortItemsFromAToZ"/></methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-->TC-006-->
+    <test name="sortItemsFromZtoA">
+        <classes>
+            <class name="InventoryPageTest">
+                <methods>
+                    <include name="sortItemsFromZToA"/></methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-->TC-007-->
+    <test name="sortItemsFromLowtoHigh">
+        <classes>
+            <class name="InventoryPageTest">
+                <methods>
+                    <include name="sortItemsFromLowToHigh"/></methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-->TC-008-->
+    <test name="sortItemsFromHightoLow">
+        <classes>
+            <class name="InventoryPageTest">
+                <methods>
+                    <include name="sortItemsFromHighToLow"/></methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-->TC-009-->
+    <test name="goToCartTest">
+        <classes>
+            <class name="InventoryPageTest">
+                <methods>
+                    <include name="goToCartTest"/></methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

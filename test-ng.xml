@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="All Suites" parallel="tests">
+    <suite-files>
+        <suite-file path="src/test/suites/LoginPageTestSuite.xml"/>
+        <suite-file path="src/test/suites/InventoryPageTestSuite.xml"/>
+        <suite-file path="src/test/suites/CartPageTestSuite.xml"/>
+        <suite-file path="src/test/suites/CheckoutStepOnePageTestSuite.xml"/>
+        <suite-file path="src/test/suites/CheckoutStepTwoPageTestSuite.xml"/>
+    </suite-files>
+
+</suite>

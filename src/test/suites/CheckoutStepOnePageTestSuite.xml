@@ -1,0 +1,58 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CheckoutStepOnePageTestSuite" parallel="tests">
+
+    <parameter name="first_name" value="John"/>
+    <parameter name="last_name" value="Doe"/>
+    <parameter name="zipcode" value="12345"/>
+
+    <!-->TC-014-->
+    <test name="fillFormAndContinueCheckoutTest">
+        <classes>
+            <class name="CheckoutStepOnePageTest">
+                <methods>
+                    <include name="fillFormAndContinueCheckoutTest"/></methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-->TC-015-->
+    <test name="cancelCheckoutTest">
+        <classes>
+            <class name="CheckoutStepOnePageTest">
+                <methods>
+                    <include name="cancelCheckoutTest"/></methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-->TC-016-->
+    <test name="tryFillFormAndContinueWithoutFirstNameTest">
+        <classes>
+            <class name="CheckoutStepOnePageTest">
+                <methods>
+                    <include name="tryFillFormAndContinueWithoutFirstNameTest"/></methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-->TC-017-->
+    <test name="tryFillFormAndContinueWithoutLastNameTest">
+        <classes>
+            <class name="CheckoutStepOnePageTest">
+                <methods>
+                    <include name="tryFillFormAndContinueWithoutLastNameTest"/></methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-->TC-018-->
+    <test name="tryFillFormAndContinueWithoutZipcodeTest">
+        <classes>
+            <class name="CheckoutStepOnePageTest">
+                <methods>
+                    <include name="tryFillFormAndContinueWithoutZipcodeTest"/></methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
