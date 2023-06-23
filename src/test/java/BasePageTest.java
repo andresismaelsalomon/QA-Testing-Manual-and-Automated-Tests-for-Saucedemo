@@ -1,5 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.*;
 
 public class BasePageTest{
@@ -7,7 +8,9 @@ public class BasePageTest{
 
     @BeforeMethod
     public void setUp(){
-        driver=new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        driver=new ChromeDriver(options);
     }
 
     @AfterMethod
